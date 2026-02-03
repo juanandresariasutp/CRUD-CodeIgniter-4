@@ -25,6 +25,7 @@
                 <?php endforeach; ?>
                 </tbody>
             </table>
+            <a href="<?= base_url('inicio/add'); ?>" class="btn btn-success">Agregar</a>
         </div>
     </div>
 

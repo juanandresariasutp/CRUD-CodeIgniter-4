@@ -23,6 +23,8 @@
                         name="telefono">
                 </div>
                 <button type="submit" class="btn btn-success">Guardarr</button>
+                <a href="<?= base_url('inicio'); ?>" class="btn btn-danger">Cancelar</a>
+
             </div>
 
         </form>

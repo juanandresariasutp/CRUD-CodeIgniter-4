@@ -28,11 +28,19 @@ class Inicio extends BaseController
     public function add(){
 
         if($_POST){
-            print_r($_POST);exit;
+            //print_r($_POST);exit;
+            $datos = [
+                'nombre'=> $_POST['nombre'],
+                'apellido'=> $_POST['apellido'],
+                'telefono'=> $_POST['telefono'],
+            ];
+
+            $model = new AlumnosModel;
+            $model->add($datos);
         }
 
         echo view('/layout/header');
-        echo view('/alumnos/add',);
+        echo view('/alumnos/add');
         echo view('/layout/footer');
     }
 
