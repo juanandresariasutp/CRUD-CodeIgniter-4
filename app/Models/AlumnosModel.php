@@ -18,4 +18,14 @@ class AlumnosModel extends Model
         return $this->save($dato);
     }
 
+    public function getAlumno($id){
+
+    return $this->where('id', $id)->first($id);
+
+    }
+
+    public function updateDatos($id, $datos){
+        return $this->update($id, $datos);
+    }
+
 }
